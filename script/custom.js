@@ -97,7 +97,7 @@ arr.sort(() => (Math.random() > 0.5 ? 1 : -1));
 // 각 카드에 랜덤 이미지를 할당하고 클릭 이벤트 추가
 cards.forEach((card, index) => {
 let cardImg = card.querySelector(".back-view img");
-cardImg.src = `../image/card-0${arr[index]}.jpg`;
+cardImg.src = `./image/card-0${arr[index]}.jpg`;
 card.addEventListener("click", flipCard);
 });
 }
